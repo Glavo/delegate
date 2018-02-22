@@ -1,5 +1,7 @@
 # delegate
 
+[![](https://jitpack.io/v/org.glavo/delegate.svg)](https://jitpack.io/#org.glavo/delegate)
+
 ## Getting Started
 
 If you're using SBT, add the following lines to your build file:
