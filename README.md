@@ -1,7 +1,19 @@
 # delegate
 
 ## Getting Started
-//todo
+
+If you're using SBT, add the following lines to your build file:
+
+```sbt
+resolvers ++=  Seq (
+  Resolver.sonatypeRepo("releases"),
+  "jitpack" at "https://jitpack.io"
+)
+
+addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.0" cross CrossVersion.full)
+
+libraryDependencies += "org.glavo" %% "delegate" % "0.1.0" 
+```
 ## Usage
 ```scala
 import org.glavo.delegate._
