@@ -12,7 +12,7 @@ resolvers ++=  Seq (
 
 addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.0" cross CrossVersion.full)
 
-libraryDependencies += "org.glavo" %% "delegate" % "0.1.0" 
+libraryDependencies += "org.glavo" %% "delegate" % "0.2.0" 
 ```
 ## Usage
 ```scala
@@ -23,7 +23,7 @@ class StringProperty {
 }
 
 class C {
-  @delegate[String]("name")  
+  @Delegate(name: String)
   val nameProperty: StringProperty = new StringProperty()
 }
 
